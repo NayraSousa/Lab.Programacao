@@ -1,7 +1,7 @@
 #include <stdio.h>
 
     int inputNumberHex, inputNumberOct ;
-    int restNumberHex, restNumberOct;
+    int restNumberHex[5], restNumberOct[5];
 
 int main(){
     
@@ -11,21 +11,32 @@ int main(){
 
 int decHex();{
     do {
-        restNumberHex = inputNumberHex % 16;
-        printf("%i", restNumberHex);
-        inputNumberHex /= 16;
+        for (int i = 0; i < 5; ++i){
+
+            restNumberHex[i] = inputNumberHex % 16;
+            inputNumberHex /= 16;}
     } while (inputNumberHex >= 1);
-    }
+
+    for (int i = 5; i >= 0; --i){
+        printf("%X", restNumberHex[i]);}
+
     printf("\n");
 
+    }
 int decOctal();{
     do {
-        restNumberOct = inputNumberOct % 8;
-        printf("%i", restNumberOct);
-        inputNumberOct /= 8;
+        for (int i = 0; i < 5; ++i){
+
+            restNumberOct[i] = inputNumberOct % 8;
+            inputNumberOct /= 8;
+        }
     } while (inputNumberOct >= 1);
-    }
+
+    for (int i = 5; i >= 0; --i){
+        printf("%X", restNumberOct[i]);}
+
     printf("\n");
 
     return 0;
+}
 }
