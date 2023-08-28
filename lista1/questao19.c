@@ -57,6 +57,8 @@ int main(){
     printf("   *       *\n");
     printf("       *     \n");
 
+    printf("oi");
+
 
 
     
