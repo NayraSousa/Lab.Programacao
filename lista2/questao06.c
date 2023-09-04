@@ -1,8 +1,8 @@
 #include <stdio.h>
 
+int votingMachine();
 int main(){
 
-    int votingMachine();
     votingMachine();
 
     return 0;

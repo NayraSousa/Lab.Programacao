@@ -1,8 +1,8 @@
 #include <stdio.h>
 
+int peterHeight();
 int main(){
 
-    int peterHeight();
     int years;
     int pedro = 110;
     int jose = 150;

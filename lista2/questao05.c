@@ -1,8 +1,8 @@
 #include <stdio.h>
 
+int biggestSmallestNumber();
 int main(){
 
-    int biggestSmallestNumber();
     biggestSmallestNumber();
     
     return 0;

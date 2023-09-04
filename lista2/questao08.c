@@ -1,8 +1,8 @@
 #include <stdio.h>
 
+int storeInstallment();
 int main(){
 
-    int storeInstallment();
     storeInstallment();
     
     return 0;

@@ -1,8 +1,8 @@
 #include <stdio.h>
 
+int dayOfWeek(int number);
 int main(){
     
-    int dayOfWeek(int number);
     int number;
 
     dayOfWeek(number);

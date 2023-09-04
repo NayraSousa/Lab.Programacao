@@ -1,8 +1,9 @@
 #include <stdio.h>
 
+int factorialNumber();
 int main(){
 
-    int factorialNumber();
+
     int factorial = 1;
 
     factorial = factorialNumber();

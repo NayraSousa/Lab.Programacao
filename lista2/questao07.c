@@ -1,8 +1,8 @@
 #include <stdio.h>
 
+int divisionResult();
 int main(){
 
-    int divisionResult();
     divisionResult();
     return 0;
 }

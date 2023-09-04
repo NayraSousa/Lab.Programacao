@@ -1,8 +1,9 @@
 #include <stdio.h>
 
+int daysOfWeek(int number);
+
 int main(void){
 
-    int daysOfWeek(int number);
     int number;
     
     printf("Digite um número: ");
