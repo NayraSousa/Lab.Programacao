@@ -76,4 +76,5 @@ int main(){
                 continue;
         }
     } while(opcao != 3);
+    return 0;
 }
