@@ -20,11 +20,8 @@ int main(){
     }
 
     for(int k = 0; k < SIZE; k++){
-        soma += vector[k][k];
+        printf("%i ", vector[k][k]);
 
     }
-
-    printf("A soma é: %i\n", soma);
-
     return 0;
 }
