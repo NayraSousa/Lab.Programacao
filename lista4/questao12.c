@@ -15,10 +15,32 @@ int main(){
 
     int matriz[n][n];
 
-    //gerar números aleatórios nos vetores x e y
+    //gerar números aleatórios nos vetores x
     for(int i = 0; i<SIZE; i++){
         x[i] = 0+rand()%(n-1);
-        y[i] = 0+rand()%(n-1);
+    }
+    int r;
+    r = 0+rand()%10;
+    printf("r = %i\n", r);
+
+    //gerar vetor y
+    for(int i = 0; i<SIZE; i++){
+
+        if(r >= 0 && r <= 3){
+            y[i] = x[i];
+        }
+        if(r > 3 && r <= 5){
+            y[i] = x[i] - 1;
+        }
+        if(r > 5 && r <= 7){
+            y[i] = x[i] + 1;
+        }
+        if(r > 7 && r <= 9){
+            y[i] = x[i] - 2;
+        }
+        if(r > 9 && r <= 10){
+            y[i] = x[i] + 2;
+        }
     }
 
     //criar matriz nxn
@@ -36,21 +58,22 @@ int main(){
         printf("\n");
     }
     printf("\n");
-
+    printf("X: ");
     //printar os vetores x e y;
     for(int i = 0; i<SIZE; i++){
         printf("%i ", x[i]);
     }
     printf("\n");
     printf("\n");
-
+    printf("Y: ");
+    //printar os vetores y;
     for(int i = 0; i<SIZE; i++){
         printf("%i ", y[i]);
     }
 
     //soma mais um na linha e coluna indicada por x e y
     for(int i = 0; i<SIZE; i++){
-        matriz[x[i]][y[i]] += 1;
+            matriz[x[i]][y[i]] += 1;
     }
     printf("\n");
     printf("\n");
