@@ -2,5 +2,5 @@
 
 struct Disciplina{
     int horario;
-    struct Professor;
+    struct Professor *p;
 };
